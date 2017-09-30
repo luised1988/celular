@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Celular</string>
+    <string name="crear_celular">Crear </string>
+    <string name="listar_celular">Listar</string>
+    <string name="reportes">Reportes</string>
+    <string name="marca_celular">Marca Celular</string>
+    <string name="celulares">CELULARES</string>
+    <string name="modelo_celular">Modelo Celular</string>
+    <string name="sistema_operativo">Sistema Operativo</string>
+    <string name="memoria_ram">Memoria Ram (en Gb)</string>
+    <string name="color_celular">Color Celular</string>
+    <string name="precio">Precio</string>
+    <string name="crear">Crear</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="crear_celulares">CREAR CELULARES</string>
+    <string-array name="opciones">
+        <item>@string/crear_celular</item>
+        <item>@string/listar_celular</item>
+        <item>@string/reportes</item>
+    </string-array>
+
+    <string name="samsung">Samsung</string>
+    <string name="apple">Apple</string>
+    <string name="nokia">Nokia</string>
+    <string-array name="marca_celular">
+        <item>@string/samsung</item>
+        <item>@string/apple</item>
+        <item>@string/nokia</item>
+    </string-array>
+
+    <string name="android">Andorid</string>
+    <string name="ios">Ios</string>
+    <string-array name="sistema_operativo">
+        <item>@string/android</item>
+        <item>@string/ios</item>
+    </string-array>
+
+    <string name="ungbram">1</string>
+    <string name="dosgbram">2</string>
+    <string name="tresgbram">3</string>
+    <string-array name="memoria_ram">
+        <item>@string/ungbram</item>
+        <item>@string/dosgbram</item>
+        <item>@string/tresgbram</item>
+    </string-array>
+
+    <string name="blanco">Blanco</string>
+    <string name="negro">Negro</string>
+    <string name="dorado">Dorado</string>
+    <string name="ororosa">Oro Rosa</string>
+    <string-array name="color">
+        <item>@string/blanco</item>
+        <item>@string/negro</item>
+        <item>@string/dorado</item>
+        <item>@string/ororosa</item>
+    </string-array>
+
+    <string name="celular_creado">Celular Guardado</string>
+
+</resources>
