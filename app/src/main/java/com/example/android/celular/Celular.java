@@ -5,12 +5,12 @@ package com.example.android.celular;
  */
 
 public class Celular {
-    String modelo;
-    int marca;
-    int sistema;
-    int ram;
-    int color;
-    double precio;
+    private String modelo;
+    private int marca;
+    private int sistema;
+    private int ram;
+    private int color;
+    private double precio;
 
     public Celular(String modelo, int marca, int sistema, int ram, int color,double precio){
         this.modelo=modelo;

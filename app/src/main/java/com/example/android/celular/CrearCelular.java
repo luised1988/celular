@@ -62,21 +62,42 @@ public class CrearCelular extends AppCompatActivity {
         int sistema;
         int ram;
         int color;
-        double precio;
+        String precio;
 
         modelo = cajamodeloCelular.getText().toString();
-        precio = Double.parseDouble(cajaPrecio.getText().toString());
+        precio = cajaPrecio.getText().toString();
 
         marca = cajaMarca.getSelectedItemPosition();
         sistema = cajaSistema.getSelectedItemPosition();
         ram = cajaRam.getSelectedItemPosition();
         color = cajaColor.getSelectedItemPosition();
+        double precio2 = 0;
+        boolean valido = true;
 
-        Celular c= new Celular(modelo,marca,sistema,ram,color,precio);
-        c.guardar();
+        if (modelo.isEmpty()) {
+            cajamodeloCelular.setError("Ingrese el modelo");
+            cajamodeloCelular.requestFocus();
+            valido = false;
+
+        } else if (precio.isEmpty()) {
+            cajaPrecio.setError("Ingrese el precio");
+            cajaPrecio.requestFocus();
+            valido = false;
+        }
+
+        if (valido) {
+            precio2 = Double.parseDouble(precio);
+            Celular c= new Celular(modelo,marca,sistema,ram,color,precio2);
+            c.guardar();
+
+            Toast.makeText(this,res.getString(R.string.celular_creado),Toast.LENGTH_SHORT).show();
+            limpiar();
+        }
 
 
-        Toast.makeText(this,res.getString(R.string.celular_creado),Toast.LENGTH_SHORT).show();
+    }
+
+    public void limpiar(View v) {
         limpiar();
     }
 

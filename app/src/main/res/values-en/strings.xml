@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CellPhone</string>
+    <string name="Ram">Ram</string>
+    <string name="android">Android</string>
+    <string name="blanco">White</string>
+    <string name="celular_creado">CellPhone Save</string>
+    <string name="celulares">Cell phones</string>
+    <string name="color_celular">Celular Color</string>
+    <string name="crear">Create</string>
+    <string name="crear_celular">Create</string>
+    <string name="crear_celulares">Cellphone Create</string>
+    <string name="dorado">Gold</string>
+    <string name="limpiar">Clean</string>
+    <string name="listado_samsung">Samusng Cell Phones</string>
+    <string name="listar_celular">Apple Cell Phones</string>
+    <string name="marca_celular">Cellular brand</string>
+    <string name="memoria_ram">Memory Ram</string>
+    <string name="modelo">Model</string>
+    <string name="modelo_celular">Cell Phone Model</string>
+    <string name="negro">Black</string>
+    <string name="ororosa">Rose Gold</string>
+    <string name="precio">" Price"</string>
+    <string name="reportes">Average Price</string>
+    <string name="sistema_operativo">Operative System</string>
+</resources>

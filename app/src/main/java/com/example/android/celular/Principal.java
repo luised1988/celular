@@ -1,7 +1,9 @@
 package com.example.android.celular;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,9 +32,34 @@ public class Principal extends AppCompatActivity {
         lstopciones.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int pos, long l) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(Principal.this);
                 switch (pos){
                     case 0:
                         i = new Intent(Principal.this,CrearCelular.class);
+                        startActivity(i);
+                        break;
+                    case 1:
+                        builder.setTitle("Celulares Apple Color Negro")
+                                .setMessage(Metodos.AppleNegros(Datos.obteberCelular()) + "")
+                                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.cancel();
+                                    }
+                                })
+                                .show();
+                        break;
+                    case 2:
+                        builder.setTitle("Precio Promedio Celulares Nokia")
+                                .setMessage(Metodos.PromedioNokia(Datos.obteberCelular()) + "")
+                                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.cancel();
+                                    }
+                                })
+                                .show();
+                        break;
+                    case 3:
+                        i = new Intent(Principal.this, ListadoSamsung.class);
                         startActivity(i);
                         break;
 
